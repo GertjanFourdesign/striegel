@@ -1,0 +1,21 @@
+.faq {
+    @include faq-base;
+
+    &__question {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        transition: $transition;
+        transform-origin: center;
+    }
+
+    &__item {
+        &.-active {
+            .faq__icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

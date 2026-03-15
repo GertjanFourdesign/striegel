@@ -1,0 +1,24 @@
+.block {
+    @include block-standard;
+    @include block-colors($color-1, white);
+
+    &.-color-1 {
+        @include block-colors($color-1, white);
+    }
+
+    &.-color-2 {
+        @include block-colors($color-2, white);
+    }
+
+    &.-color-3 {
+        @include block-colors($color-3, white);
+    }
+
+    &.-white {
+        @include block-colors(white, $color-black);
+    }
+
+    &.-black {
+        @include block-colors($color-black, white);
+    }
+}

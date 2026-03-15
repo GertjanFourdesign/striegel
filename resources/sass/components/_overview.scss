@@ -1,0 +1,11 @@
+.overview {
+    @include overview(4, $grid-gutter, $space-small);
+
+    @include media-l {
+        @include overview(6, $grid-gutter-l, $space-small-l);
+    }
+
+    @include media-s {
+        @include overview(12, $grid-gutter-s, $space-small-s);
+    }
+}

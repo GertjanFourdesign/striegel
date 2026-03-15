@@ -1,0 +1,33 @@
+@import 'nova-website-css-package/src/sass/style.scss';
+
+// Plugins
+@import '@splidejs/splide/dist/css/splide.min.css';
+
+// Settings
+@import 'settings/variables';
+@import 'settings/mixins';
+@import 'settings/typography';
+
+// Layout
+@import 'layout/header';
+@import 'layout/body';
+@import 'layout/footer';
+
+// Sections
+@import 'sections/sections';
+
+// Components
+@import 'components/button';
+@import 'components/submenu';
+@import 'components/overview';
+@import 'components/item';
+@import 'components/slider';
+@import 'components/mobile-menu';
+@import 'components/hamburger';
+@import 'components/form';
+@import 'components/faq';
+@import 'components/block';
+@import 'components/image';
+@import 'components/part';
+@import 'components/menu';
+@import 'components/video';

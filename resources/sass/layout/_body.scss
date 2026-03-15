@@ -1,0 +1,12 @@
+* {
+    @include layout-reset;
+}
+
+body {
+    @include layout-setup;
+    @include text;
+
+    img {
+        @include image-standard;
+    }
+}

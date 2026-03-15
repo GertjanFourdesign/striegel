@@ -1,0 +1,11 @@
+.button {
+    @include button-base;
+
+    &.-color-2 {
+        background-color: $color-2;
+    }
+
+    &.-bordered {
+        border: 1px solid currentColor;
+    }
+}

@@ -1,0 +1,4 @@
+.hamburger {
+    @include hamburger-base;
+    @include hamburger-effect-1;
+}

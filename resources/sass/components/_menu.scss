@@ -1,0 +1,22 @@
+.header {
+
+    .menu {
+        &__item {
+            display: flex;
+            align-items: center;
+
+            height: 100%;
+            
+            color: $color-header;
+    
+            & + .menu__item {
+                margin-left: $header-item-space;
+            }
+    
+            &:hover,
+            &.-active {
+                color: $color-2;
+            }
+        }
+    }
+}

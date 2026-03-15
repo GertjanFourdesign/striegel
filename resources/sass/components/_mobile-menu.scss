@@ -1,0 +1,16 @@
+.mobile-menu {
+	@include mobile-menu-base;
+
+	.container {
+		@include hide-scrollbar;
+
+		overflow: scroll;
+		height: 100%;
+	}
+
+	&__item {
+		display: block;
+
+		@include h4;
+	}
+}

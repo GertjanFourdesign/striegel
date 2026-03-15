@@ -1,0 +1,19 @@
+.section .container {
+    @include part {
+        position: relative;
+
+        &.-colored {
+            @include part-colored;
+            @include background-colors;
+        }
+
+        &.-justify-between {
+            display: flex;
+            justify-content: space-between;
+
+            > * {
+                margin-top: 0;
+            }
+        }
+    }
+}

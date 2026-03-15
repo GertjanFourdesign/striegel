@@ -1,0 +1,36 @@
+.footer {
+    @include footer-standard;
+
+    &__top {
+        @include space-small(padding-top);
+        @include space-small(padding-bottom);
+
+        * {
+            color: white;
+        }
+    }
+
+    &__bottom {
+        @include footer-bottom-standard;
+
+        @include part {
+            display: flex;
+            justify-content: space-between;
+
+            > * {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+
+        * {
+            & + * {
+                margin-left: 20px;
+            }
+        }
+    }
+}

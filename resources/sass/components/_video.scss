@@ -1,0 +1,36 @@
+.video {
+    position: relative;
+
+    &__source {
+        @include absolute-cover;
+        @include object-cover;
+        
+        display: block;
+        object-fit: cover;
+    }
+
+    &__control {
+        @include absolute-center;
+
+        width: fit-content;
+        height: fit-content;
+    }
+
+    &__container {
+        position: relative;
+        padding-top: 55%;
+    } 
+
+    &.-playing, 
+    &.-autoplay {
+        .video {
+            &__control {
+                opacity: 0;
+            }
+        }
+    }
+
+    & + .editor-js-content {
+        @include space-small(margin-top);
+    }
+}

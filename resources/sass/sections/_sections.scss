@@ -1,0 +1,44 @@
+.section {
+
+    .container {
+        @include space-part;
+        @include grid;
+        @include container;
+
+        .container {
+            @include container('full-width');
+        }
+    }
+
+    & + .section {
+        @include space-standard(margin-top);
+    }
+
+    &:first-of-type {
+        @include space-large(padding-top);
+    }
+
+    &:last-of-type:not(.--colored) {
+        @include space-standard(margin-bottom);
+    }
+    
+    &.--extra-small {
+        @include container('extra-small');
+    }
+
+    &.--full-width {
+        @include container('full-width');
+    }
+
+    &.--colored {
+        @include line-colored($color-1);
+        @include background-colors;
+    }
+
+    &.--reversed {
+        .container {
+            @include flex-direction(row-reverse);
+        }
+    }
+}
+

@@ -1,0 +1,23 @@
+.header {
+    @include header-standard;
+
+    &__part {
+        display: flex;
+        justify-content: flex-end;
+
+        height: 100%;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__item {
+        &:hover,
+        &.-active {
+            color: $color-2 !important;
+        }
+    }
+}

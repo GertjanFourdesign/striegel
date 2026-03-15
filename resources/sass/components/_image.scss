@@ -1,0 +1,18 @@
+.image {
+
+    &--cover {
+        @include object-cover;
+    }
+
+    &--contain {
+        @include object-contain;
+    }
+
+    &--full {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        @include object-cover;
+    }
+}

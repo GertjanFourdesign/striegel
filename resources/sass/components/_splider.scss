@@ -1,0 +1,20 @@
+.splide.carousel {
+
+    .splide {
+        
+        &__track {
+            overflow: visible;
+        }
+
+        &__slide {
+            position: relative;
+            padding-top: 35%;
+            
+            img {
+                @include absolute-cover;
+
+                object-fit: cover;
+            }
+        }
+    }
+}

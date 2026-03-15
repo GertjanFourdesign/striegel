@@ -1,0 +1,35 @@
+.form {
+    @include form-base;
+
+    label {
+        @include label-base;
+    }
+
+    textarea {
+        @include input-base;
+    }
+
+    &__field {
+        @include form-field-base;
+    }
+
+    .input {
+        @include input-base;
+
+        &.-error {
+            @include input-error;
+        }
+
+        &.-success {
+            @include input-success;
+        }
+
+        &--checkbox {
+            @include checkbox-base;
+        }
+
+        &--radio {
+            @include radio-base;
+        }
+    }
+}
